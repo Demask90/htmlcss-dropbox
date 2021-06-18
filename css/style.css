@@ -10,9 +10,12 @@ body{
 
 /* common */
 
-.w-70{
-    width: 70%;
-    margin: 0 auto;
+.banner{
+   text-decoration: none;
+   color: white;
+   background: blue;
+   padding: 10px;
+   display: inline;
 }
 
 /* fine common */
@@ -20,7 +23,7 @@ body{
 
 /* debug */
 
-.debug header nav div {
+/* .debug header nav{
     background-color: gray;
 }
 
@@ -30,18 +33,52 @@ body{
 
 .debug .nav-right{
     background-color: blue;
-}
+} */
 
 /* fine debug */
 
+header nav{
+    height: 80px;
+}
+
+header nav div{
+    height: 100%;
+    line-height: 80px;
+    text-align: center;
+}
 
 header .nav-left{
-    width: 30%;
+    width: 35%;
     float: left;
-
 }
 
 header .nav-right{
-    width: 30%;
+    width: 35%;
     float: right;
 }
+
+header .nav-left #logo{
+    display: inline-block;
+}
+
+header .nav-left #logo img{
+    vertical-align: middle;
+}
+
+header nav div ul {
+    list-style: none;
+    height: 100%;
+ }
+ 
+ header nav div ul li {
+    display: inline-block;
+    text-decoration: none;
+    height: 100%;
+ }
+ 
+ header nav div ul li a {
+     display: inline-block;
+    text-decoration: none;
+    padding: 0 20px;
+    color: black;
+ }
