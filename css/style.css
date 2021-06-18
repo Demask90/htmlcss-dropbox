@@ -18,24 +18,19 @@ body{
    display: inline;
 }
 
+.w-70{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
 /* fine common */
 
-
-/* debug */
-
-/* .debug header nav{
-    background-color: gray;
-}
-
-.debug .nav-left{
-    background-color: red;
-}
-
-.debug .nav-right{
-    background-color: blue;
-} */
-
-/* fine debug */
 
 header nav{
     height: 80px;
@@ -82,3 +77,29 @@ header nav div ul {
     padding: 0 20px;
     color: black;
  }
+
+ main .first-section{
+     background-color: #B4D0E7;
+     padding: 20px 50px;
+ }
+
+ main .first-section h1{
+     padding: 20px 0;
+     font-size: 4.7em;
+     font-weight: 900;
+ }
+
+main .first-section .text-left{
+    width: 40%;
+}
+
+ /* debug */
+
+.debug main{
+    background-color: gray;
+}
+.debug main .first-section .text-left{
+    background-color: blue;
+}
+
+/* fine debug */
