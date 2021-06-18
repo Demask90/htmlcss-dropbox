@@ -23,6 +23,11 @@ body{
     margin: 0 auto;
 }
 
+.w-70{
+    width: 70%;
+    margin: 0 auto;
+}
+
 .clearfix::after {
     content: "";
     clear: both;
@@ -88,14 +93,15 @@ header nav div ul {
  }
 
  main .first-section h1{
-     padding: 20px 0;
-     font-size: 4.7em;
+     padding: 30px 0;
+     font-size: 6em;
      font-weight: 900;
  }
 
 main .first-section .text-left{
-    width: 30%;
+    width: 25%;
     display: inline-block;
+    margin-right: 100px;
 }
 
 main .first-section .text-left p{
@@ -108,20 +114,57 @@ main .first-section .text-left div{
 
 main .first-section .text-left i{
     font-size: 3em;
-    padding-bottom: 50px;
+    padding-bottom: 200px;
 }
 
 main .first-section .jumbotron{
     display: inline;
     position: absolute;
+    padding-right: 60px;
 }
 
 main .first-section .jumbotron img{
     display: inline;
-    width: 90%;
+    width: 100%;
 }
 
+main .second-section{
+    margin-top: 250px;
+}
 
+main .second-section .type-billing h2{
+    font-size: 3em;
+    height: 50px;
+}
+
+main .second-section .type-billing div{
+    margin-top: 50px;
+}
+
+main .second-section .type-billing span{
+    padding: 20px 20px 20px 0;
+}
+
+main .second-section .col1-col2-col3 div{
+    width: calc(100% / 3 - 100px);
+    margin-top: 20px;
+    display: inline;
+    background-color: hotpink;
+}
+
+main .second-section .col1,main .second-section .col2, main .second-section .col3{
+    display: inline;
+    float: left;
+    border: 2px solid black;
+}
+
+main .second-section .col1{
+    
+}
+
+main .second-section .col2{
+    margin: 0 150px;
+}
 
  /* debug */
 
@@ -129,12 +172,9 @@ main .first-section .jumbotron img{
 /* .debug main{
     background-color: gray;
 } */
-/* 
-.debug main .first-section .text-left{
+
+.debug main .second-section{
     background-color:red;
 }
 
-.debug main .first-section .jumbotron{
-    background-color: blue;
-} */
 /* fine debug */
