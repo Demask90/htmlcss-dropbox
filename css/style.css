@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* common */
+
+.w-70{
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* fine common */
+
+
+/* debug */
+
+.debug header nav div {
+    background-color: gray;
+}
+
+.debug .nav-left{
+    background-color: red;
+}
+
+.debug .nav-right{
+    background-color: blue;
+}
+
+/* fine debug */
+
+
+header .nav-left{
+    width: 30%;
+    float: left;
+
+}
+
+header .nav-right{
+    width: 30%;
+    float: right;
+}
