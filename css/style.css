@@ -14,9 +14,17 @@ body{
    text-decoration: none;
    color: white;
    background: blue;
-   padding: 10px;
    display: inline;
+   padding: 10px;
 }
+
+.banner1{
+    text-decoration: none;
+    color: white;
+    background: blue;
+    padding: 10px;
+    text-align: center;
+ }
 
 .w-90{
     width: 90%;
@@ -109,7 +117,7 @@ main .first-section .text-left p{
 }
 
 main .first-section .text-left div{
-    padding: 20px 0 50px 0;
+    padding: 25px 0 50px 0;
 } 
 
 main .first-section .text-left i{
@@ -129,11 +137,11 @@ main .first-section .jumbotron img{
 }
 
 main .second-section{
-    margin-top: 250px;
+    margin-top: 150px;
 }
 
 main .second-section .type-billing h2{
-    font-size: 3em;
+    font-size: 2.5em;
     height: 50px;
 }
 
@@ -145,26 +153,63 @@ main .second-section .type-billing span{
     padding: 20px 20px 20px 0;
 }
 
-main .second-section .col1-col2-col3 div{
-    width: calc(100% / 3 - 100px);
-    margin-top: 20px;
-    display: inline;
-    background-color: hotpink;
-}
-
-main .second-section .col1,main .second-section .col2, main .second-section .col3{
+main .second-section .col1-col2-col3 .col1,main .second-section .col1-col2-col3 .col2, main .second-section .col1-col2-col3 .col3{
     display: inline;
     float: left;
     border: 2px solid black;
+    width: calc(100% / 3 - 67px);
+    margin-top: 20px;
 }
 
-main .second-section .col1{
-    
+main .second-section .col1-col2-col3 .col1 .type-abb, main .second-section .col2 .type-abb, main .second-section .col3 .type-abb{
+    text-align: center;
+    padding: 10px;
+    border-bottom: 2px solid black;    
+}
+
+main .second-section .col1-col2-col3 div:not(.banner1), main .second-section .col1-col2-col3 h2, main .second-section .col-button h2{
+    padding: 10px 5px;
+}
+
+
+main .second-section .col1-col2-col3 .banner1{
+    margin: 30px 0;
+    text-align: center;
+}
+
+main .second-section .col1-col2-col3 h4{
+    padding: 20px 5px;
 }
 
 main .second-section .col2{
-    margin: 0 150px;
+    margin: 0 100px;
 }
+
+main .second-section .col-button{
+    border: 2px solid black;
+    margin: 100px 0;
+    position: relative;
+}
+
+main .second-section .col-button .type-abb{
+    text-align: center;
+    padding: 10px;
+    border-bottom: 2px solid black;
+    vertical-align: middle;
+
+}
+
+main .second-section .col-button h4:not(.banner), main .second-section .col-button div:not(.banner){
+    padding-bottom: 20px;
+    padding-left: 5px;
+}
+
+main .second-section .col-button .banner{
+    position: absolute;
+    top: 70px;
+    right: 20px;
+}
+
 
  /* debug */
 
@@ -173,8 +218,8 @@ main .second-section .col2{
     background-color: gray;
 } */
 
-.debug main .second-section{
+/* .debug main .second-section .col-button{
     background-color:red;
-}
+}  */
 
 /* fine debug */
