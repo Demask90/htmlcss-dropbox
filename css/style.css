@@ -18,8 +18,8 @@ body{
    display: inline;
 }
 
-.w-70{
-    width: 70%;
+.w-90{
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -29,6 +29,10 @@ body{
     display: table;
   }
 
+.background.w-100{
+    background-color: #B4D0E7;
+    width: 100%;
+}
 /* fine common */
 
 
@@ -43,12 +47,12 @@ header nav div{
 }
 
 header .nav-left{
-    width: 35%;
+    width: 45%;
     float: left;
 }
 
 header .nav-right{
-    width: 35%;
+    width: 45%;
     float: right;
 }
 
@@ -79,8 +83,8 @@ header nav div ul {
  }
 
  main .first-section{
-     background-color: #B4D0E7;
-     padding: 20px 50px;
+     padding: 20px 60px;
+     position: relative;
  }
 
  main .first-section h1{
@@ -90,16 +94,47 @@ header nav div ul {
  }
 
 main .first-section .text-left{
-    width: 40%;
+    width: 30%;
+    display: inline-block;
 }
+
+main .first-section .text-left p{
+    padding-bottom: 50px;
+}
+
+main .first-section .text-left div{
+    padding: 20px 0 50px 0;
+} 
+
+main .first-section .text-left i{
+    font-size: 3em;
+    padding-bottom: 50px;
+}
+
+main .first-section .jumbotron{
+    display: inline;
+    position: absolute;
+}
+
+main .first-section .jumbotron img{
+    display: inline;
+    width: 90%;
+}
+
+
 
  /* debug */
 
-.debug main{
+
+/* .debug main{
     background-color: gray;
-}
+} */
+/* 
 .debug main .first-section .text-left{
-    background-color: blue;
+    background-color:red;
 }
 
+.debug main .first-section .jumbotron{
+    background-color: blue;
+} */
 /* fine debug */
