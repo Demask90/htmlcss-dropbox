@@ -266,34 +266,36 @@ main #third-section .box-text h2:not(.banner2), main #third-section .box-text p:
     line-height: 25px;
 }
 
-
+.content-box{
+    float: left;
+    margin: 20px;
+    width: calc(100% / 3 - 40px);
+  }
+  
 
 
 
  /* debug */
 
 
-/* .debug main #third-section{
-    background-color: gray;;
+.debug main #four-section{
+    background-color: gray;
 } 
 
-.debug main #third-section .box-img{
+.debug main #four-section .content-img{
     background-color: blue;
-    width: 40%;
 }
 
-.debug main #third-section .box-img img{
+.debug main #four-section .content-img img{
     width: 100%;
 }
 
-.debug main #third-section .box-text{
+.debug main #four-section .content-text{
     background-color:red;
-    float: left;
-    width: 40%;
 }
 
-.debug main #third-section .box-text h2, .debug main #third-section .box-text p, .debug main #third-section .box-text div{
+.debug main #four-section .content-text h4, .debug main #four-section .content-text p{
     width: 100%;
-} */
+}
 
 /* fine debug */
