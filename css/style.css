@@ -55,6 +55,7 @@ body{
     display: table;
   }
 
+
 .background-w-100{
     background-color: #B4D0E7;
     width: 100%;
@@ -172,7 +173,7 @@ main #second-section{
 }
 
 main #second-section .type-billing h2{
-    font-size: 2.5em;
+    font-size: 3em;
     height: 50px;
 }
 
@@ -266,36 +267,107 @@ main #third-section .box-text h2:not(.banner2), main #third-section .box-text p:
     line-height: 25px;
 }
 
-.content-box{
+main #four-section #size-second-title{
+    font-size: 3em;
+    margin-top: 130px;
+    padding: 20px 0;
+}
+
+main #four-section .content-box{
     float: left;
-    margin: 20px;
     width: calc(100% / 3 - 40px);
+    margin: 20px 0;
   }
+
+main #four-section .content-box:nth-child(3), main #four-section .content-box:nth-child(6){
+    margin: 20px;
+}
   
+main #four-section .content-img img{
+    width: 100%;
+}
 
+main #four-section .content-text, main #four-section .content-text h2{
+    padding-bottom: 30px;
+}
 
+main #five-section{
+    margin-top: 150px;
+}
+
+main #five-section .row-text .w-70 h2{
+    line-height: 60px;
+    font-size: 3em;
+}
+
+main #five-section .row-text .w-70 a{
+    display: inline-block;
+    padding: 40px 0;
+}
 
  /* debug */
 
 
-.debug main #four-section{
+.debug main #five-section{
     background-color: gray;
+    width: 100%;
 } 
 
-.debug main #four-section .content-img{
+.debug main #five-section .background-w-100{
+    width: 100%;
+    height: 900px;
+}
+
+.debug main #five-section .background-w-100 .select-teams{
+    width: 100%;
+    height: 600px;
     background-color: blue;
 }
 
-.debug main #four-section .content-img img{
-    width: 100%;
-}
-
-.debug main #four-section .content-text{
+.debug main #five-section .background-w-100 .select-teams .teams-left{
     background-color:red;
+    width: 600px;
+    height: 600px;
+    float: left;
 }
 
-.debug main #four-section .content-text h4, .debug main #four-section .content-text p{
-    width: 100%;
+.debug main #five-section .background-w-100 .select-teams .teams-right{
+    background-color:green;
+    width: 600px;
+    height: 600px;
+    float: right;
+}
+
+.debug #five-section .square.top-left{
+    background-color: hotpink;
+    width: 300px;
+    height: 300px;
+}
+
+.debug #five-section .square.top-right{
+    background-color:indigo;
+    width: 300px;
+    height: 300px;
+}
+
+.debug #five-section .square.bottom-left{
+    background-color:greenyellow;
+    width: 300px;
+    height: 300px;
+}
+
+.debug #five-section .square.bottom-right{
+    background-color:gold;
+    width: 300px;
+    height: 300px;
+}
+
+.debug main #five-section .select-teams .square-left {
+    display: inline-block;
+}
+
+.debug main #five-section .select-teams .square-right {
+    float: left;
 }
 
 /* fine debug */
