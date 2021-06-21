@@ -33,7 +33,7 @@ body{
     text-align: center;
     border: 2px solid black;
     display: inline;
-    margin-left: 20px;
+    margin-left: 40px;
  }
 
 .w-90{
@@ -242,21 +242,18 @@ main #second-section .col-button .banner{
 }
 
 main #third-section{
-    background-color: gray;
     position: relative;
 } 
 
 main #third-section .box-img{
-    background-color: blue;
     width: 50%;
 }
 
 main #third-section .box-text{
     position: absolute;
-    background-color:red;
-    width: 30%;
+    width: 50%;
     top: 20px;
-    right: 200px;
+    right: 0;
 }
 
 main #third-section .box-img img{
@@ -265,7 +262,8 @@ main #third-section .box-img img{
 
 main #third-section .box-text h2:not(.banner2), main #third-section .box-text p:not(.banner2), main #third-section .box-text div:not(.banner2){
     width: 100%;
-    padding: 20px;
+    padding: 20px 0 20px 40px;
+    line-height: 25px;
 }
 
 
