@@ -36,6 +36,15 @@ body{
     margin-left: 40px;
  }
 
+ .banner3{
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    padding: 10px 30px;
+    text-align: center;
+    display: inline;
+ }
+
 .w-90{
     width: 90%;
     margin: 0 auto;
@@ -65,7 +74,7 @@ body{
 
 hr{
     width: 30%;
-    margin: 10px;
+    margin: 10px 0;
 }
 /* fine common */
 
@@ -275,7 +284,7 @@ main #four-section #size-second-title{
 
 main #four-section .content-box{
     float: left;
-    width: calc(100% / 3 - 40px);
+    width: calc(100% / 3 - 20px);
     margin: 20px 0;
   }
 
@@ -302,72 +311,117 @@ main #five-section .row-text .w-70 h2{
 
 main #five-section .row-text .w-70 a{
     display: inline-block;
-    padding: 40px 0;
+    padding: 40px 0 60px 0;
 }
 
- /* debug */
-
-
-.debug main #five-section{
-    background-color: gray;
-    width: 100%;
-} 
-
-.debug main #five-section .background-w-100{
-    width: 100%;
-    height: 900px;
+main #five-section .background-w-100 .select-teams{
+    background-color:aliceblue;
 }
 
-.debug main #five-section .background-w-100 .select-teams{
-    width: 100%;
-    height: 600px;
-    background-color: blue;
-}
-
-.debug main #five-section .background-w-100 .select-teams .teams-left{
-    background-color:red;
-    width: 600px;
-    height: 600px;
+main #five-section .background-w-100 .select-teams .teams-left{
     float: left;
 }
 
-.debug main #five-section .background-w-100 .select-teams .teams-right{
-    background-color:green;
-    width: 600px;
-    height: 600px;
+main #five-section .background-w-100 .select-teams .teams-right{
     float: right;
 }
 
-.debug #five-section .square.top-left{
-    background-color: hotpink;
+#five-section .square{
     width: 300px;
     height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 80%;
+    filter:invert(1);
 }
 
-.debug #five-section .square.top-right{
-    background-color:indigo;
-    width: 300px;
-    height: 300px;
+
+#five-section .teams-left .square.top-left{
+    background-image: url(../img/arizona_state_university.svg);
+    background-color:#9ef7d4;
 }
 
-.debug #five-section .square.bottom-left{
-    background-color:greenyellow;
-    width: 300px;
-    height: 300px;
+#five-section .teams-right .square.top-left{
+    background-image: url(../img/hearst_corp.svg);
+    background-color: #4b2f18;
 }
 
-.debug #five-section .square.bottom-right{
-    background-color:gold;
-    width: 300px;
-    height: 300px;
+#five-section .teams-left .square.top-right{
+    background-image: url(../img/designit.svg);
+    background-color:#5d2c64
 }
 
-.debug main #five-section .select-teams .square-left {
+#five-section .teams-right .square.top-right{
+    background-image: url(../img/world_bicycle_relief.svg);
+    background-color:#2affe0;
+}
+
+#five-section .teams-left .square.bottom-left{
+    background-image: url(../img/topps.svg);
+    background-color:#00e3e3;
+}
+
+#five-section .teams-right .square.bottom-left{
+    background-image: url(../img/clear_channel.svg);
+    background-color:#0027cf;
+}
+
+#five-section .teams-left .square.bottom-right{
+    background-image: url(../img/university_of_florida.svg);
+    background-color:#ff6c31;
+}
+
+#five-section .teams-right .square.bottom-right{
+    background-image: url(../img/lonely_planet.svg);    
+    background-color:#f2db7e;
+
+}
+
+main #five-section .select-teams .square-left {
     display: inline-block;
 }
 
-.debug main #five-section .select-teams .square-right {
+main #five-section .select-teams .square-right {
     float: left;
 }
 
-/* fine debug */
+main #five-section .central-text{
+    width: 703px;
+    height: 600px;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 50px 50px 50px;
+}
+
+main #five-section .central-text .designit{
+    height: 130px;
+    width: 100%;
+    background-image: url(../img/designit.svg);
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: top;
+}
+
+main #five-section .central-text div:last-child, main #five-section .central-text p{
+    display: inline-block;
+    padding: 40px 0;
+}
+
+main #five-section .background-w-100 .w-70{
+    position: relative;
+}
+
+main #five-section .background-w-100 .w-70 h2{
+    padding: 100px 0;
+    font-size: 3em;
+}
+
+main #five-section .background-w-100 .w-70 div{
+    position: absolute;
+    top: 100px;
+    right: 120px;
+}
+
+
