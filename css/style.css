@@ -65,8 +65,9 @@ body{
 main #second-section hr,
 main #fifth-section hr,
 footer hr{
-    width: 30%;
+    width: 20%;
     margin: 10px 0;
+    color: grey;
 }
 
 /* fine common */
@@ -98,11 +99,11 @@ header .nav-left #logo img{
     margin-bottom: 7px;
 }
 
-header nav div ul li {
+header nav div ul li{
     display: inline-block;
 }
  
-header nav div ul li a {
+header nav div ul li a{
     text-decoration: none;
     padding: 0 20px;
     color: black;
@@ -114,18 +115,18 @@ header nav .nav-right .banner{
 
 main #first-section{
     padding: 20px 60px;
- }
+}
 
 main #first-section h1{
     padding: 30px 0;
     font-size: 6em;
     margin-bottom: 50px;
- }
+}
 
 main #first-section .text-jumbo{
     position: relative;
     width: 100%;
- }
+}
 
 main #first-section .text-left{
     width: 30%;
@@ -313,7 +314,6 @@ main #fifth-section .central-text{
 
 main #fifth-section .central-text .designit{
     height: 6vw;
-    width: 100%;
     background-image: url(../img/designit.svg);
     background-size: 40%;
     background-repeat: no-repeat;
@@ -341,7 +341,6 @@ main #fifth-section .square{
     background-size: 60%;
     filter:invert(1);
 }
-
 
 main #fifth-section .teams-left .square.top-left{
     background-image: url(../img/arizona_state_university.svg);
