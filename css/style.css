@@ -11,12 +11,12 @@ body{
 /* common */
 
 .banner{
-   text-decoration: none;
-   color: white;
-   background: blue;
-   display: inline;
-   padding: 10px;
-   text-align: center;
+    text-decoration: none;
+    color: white;
+    background: blue;
+    display: inline;
+    padding: 10px;
+    text-align: center;
 }
 
 .banner1{
@@ -27,16 +27,16 @@ body{
     text-align: center;
  }
 
- .banner2{
+.banner2{
     text-decoration: none;
     padding: 10px;
     text-align: center;
-    border: 2px solid black;
+    border: 1px solid black;
     display: inline;
     margin-left: 40px;
  }
 
- .banner3{
+.banner3{
     background-color: white;
     color: black;
     text-decoration: none;
@@ -72,7 +72,8 @@ body{
     margin: 0 auto;
 }
 
-hr{
+main #second-section hr,
+main #fifth-section hr{
     width: 30%;
     margin: 10px 0;
 }
@@ -109,6 +110,7 @@ header .nav-left #logo{
 
 header .nav-left #logo img{
     vertical-align: middle;
+    margin-bottom: 7px;
 }
 
 header nav div ul {
@@ -116,32 +118,37 @@ header nav div ul {
     height: 100%;
  }
  
- header nav div ul li {
+header nav div ul li {
     display: inline-block;
     text-decoration: none;
     height: 100%;
  }
  
- header nav div ul li a {
-     display: inline-block;
+header nav div ul li a {
+    display: inline-block;
     text-decoration: none;
     padding: 0 20px;
     color: black;
  }
 
- main #first-section{
-     padding: 20px 60px;
+header nav .nav-right .banner{
+    margin-left: 10px;
+}
+
+main #first-section{
+    padding: 20px 60px;
  }
 
- main #first-section h1{
-     padding: 30px 0;
-     font-size: 6em;
-     font-weight: 900;
-     margin-bottom: 50px;
+main #first-section h1{
+    padding: 30px 0;
+    font-size: 6em;
+    font-weight: 900;
+    margin-bottom: 50px;
  }
 
- main #first-section .text-jumbo{
-     position: relative;
+main #first-section .text-jumbo{
+    position: relative;
+    width: 100%;
  }
 
 main #first-section .text-left{
@@ -169,12 +176,13 @@ main #first-section .jumbotron{
     display: inline;
     position: absolute;
     padding-right: 60px;
-    bottom: -80px;
+    top: 0;
+    width: 70%;
 }
 
 main #first-section .jumbotron img{
     display: inline;
-    width: 105%;
+    width: 100%;
 }
 
 main #second-section{
@@ -194,61 +202,64 @@ main #second-section .type-billing span{
     padding: 20px 20px 20px 0;
 }
 
-main #second-section .col1-col2-col3 .col1, main #second-section .col1-col2-col3 .col2, main #second-section .col1-col2-col3 .col3{
+main #second-section .col{
     display: inline;
     float: left;
-    border: 2px solid black;
+    border: 1px solid black;
     width: calc(100% / 3 - 67px);
     margin-top: 20px;
 }
 
-main #second-section .col1-col2-col3 .col1 .type-abb, main #second-section .col2 .type-abb, main #second-section .col3 .type-abb{
+main #second-section .col .type-abb,
+main #second-section .col-button .type-abb{
     text-align: center;
-    padding: 10px;
-    border-bottom: 2px solid black;    
+    border-bottom: 1px solid black;
+    vertical-align: middle;
+    padding: 10px;  
 }
 
-main #second-section .col1-col2-col3 div:not(.banner1), main #second-section .col1-col2-col3 h2, main #second-section .col-button h2{
-    padding: 10px 5px;
+main #second-section .col1-col2-col3 .abb {
+    padding: 10px 20px 20px 20px;
 }
 
+
+main #second-section .col1-col2-col3 .abb div:not(.banner1),
+main #second-section .col1-col2-col3 .abb h2:not(.banner1),
+main #second-section .col-button .abb h2:not(.banner1){
+    padding: 10px 0;
+}
 
 main #second-section .col1-col2-col3 .banner1{
     margin: 30px 0;
-    text-align: center;
 }
 
 main #second-section .col1-col2-col3 h4{
-    padding: 20px 5px;
+    padding: 10px 0 20px 0;
 }
 
-main #second-section .col2{
-    margin: 0 100px;
+main #second-section .col:nth-child(2){
+    margin: 20px 100px 0 100px;
 }
 
 main #second-section .col-button{
-    border: 2px solid black;
+    border: 1px solid black;
     margin: 100px 0;
     position: relative;
 }
 
-main #second-section .col-button .type-abb{
-    text-align: center;
-    padding: 15px 15px 10px 15px;
-    border-bottom: 2px solid black;
-    vertical-align: middle;
-
+main #second-section .col-button h2:not(.banner, .type-abb){
+    padding: 0 10px;
 }
 
-main #second-section .col-button h4:not(.banner), main #second-section .col-button div:not(.banner){
-    padding-bottom: 20px;
-    padding-left: 5px;
+main #second-section .col-button h4:not(.banner, .type-abb),
+main #second-section .col-button div:not(.banner, .type-abb){
+    padding: 10px;
 }
 
 main #second-section .col-button .banner{
     position: absolute;
     top: 70px;
-    right: 20px;
+    right: 30px;
 }
 
 main #third-section{
@@ -270,131 +281,137 @@ main #third-section .box-img img{
     width: 100%;
 }
 
-main #third-section .box-text h2:not(.banner2), main #third-section .box-text p:not(.banner2), main #third-section .box-text div:not(.banner2){
+main #third-section .box-text h2:not(.banner2),
+main #third-section .box-text p:not(.banner2),
+main #third-section .box-text div:not(.banner2){
     width: 100%;
     padding: 20px 0 20px 40px;
     line-height: 25px;
 }
 
-main #four-section #size-second-title{
+main #fourth-section #size-second-title{
     font-size: 3em;
     margin-top: 130px;
     padding: 20px 0;
 }
 
-main #four-section .content-box{
+main #fourth-section .content-box{
     float: left;
-    width: calc(100% / 3 - 20px);
-    margin: 20px 0;
-  }
+    width: calc(100% / 3 - 60px);
+    margin: 60px 0;
+}
 
-main #four-section .content-box:nth-child(3), main #four-section .content-box:nth-child(6){
-    margin: 20px;
+main #fourth-section .content-box:nth-child(3),
+main #fourth-section .content-box:nth-child(6){
+    margin: 60px;
 }
   
-main #four-section .content-img img{
+main #fourth-section .content-img img{
     width: 100%;
 }
 
-main #four-section .content-text, main #four-section .content-text h2{
+main #fourth-section .content-text,
+main #fourth-section .content-text h2{
     padding-bottom: 30px;
 }
 
-main #five-section{
+main #fifth-section{
     margin-top: 150px;
 }
 
-main #five-section .row-text .w-70 h2{
+main #fifth-section .row-text .w-70 h2{
     line-height: 60px;
     font-size: 3em;
 }
 
-main #five-section .row-text .w-70 a{
+main #fifth-section .row-text .w-70 a{
     display: inline-block;
     padding: 40px 0 60px 0;
 }
 
-main #five-section .background-w-100 .select-teams{
+main #fifth-section .select-teams{
     background-color:aliceblue;
 }
 
-main #five-section .background-w-100 .select-teams .teams-left{
+main #fifth-section .select-teams .teams-left{
     float: left;
+    width: 30vw;
+    height: 30vw;
 }
 
-main #five-section .background-w-100 .select-teams .teams-right{
+main #fifth-section .select-teams .teams-right{
     float: right;
+    width: 30vw;
+    height: 30vw;
 }
 
-#five-section .square{
-    width: 300px;
-    height: 300px;
+main #fifth-section .square{
+    width: 15vw;
+    height: 15vw;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    background-size: 80%;
+    background-size: 60%;
     filter:invert(1);
 }
 
 
-#five-section .teams-left .square.top-left{
+main #fifth-section .teams-left .square.top-left{
     background-image: url(../img/arizona_state_university.svg);
     background-color:#9ef7d4;
 }
 
-#five-section .teams-right .square.top-left{
+main #fifth-section .teams-right .square.top-left{
     background-image: url(../img/hearst_corp.svg);
     background-color: #4b2f18;
 }
 
-#five-section .teams-left .square.top-right{
+main #fifth-section .teams-left .square.top-right{
     background-image: url(../img/designit.svg);
     background-color:#5d2c64
 }
 
-#five-section .teams-right .square.top-right{
+main #fifth-section .teams-right .square.top-right{
     background-image: url(../img/world_bicycle_relief.svg);
     background-color:#2affe0;
 }
 
-#five-section .teams-left .square.bottom-left{
+main #fifth-section .teams-left .square.bottom-left{
     background-image: url(../img/topps.svg);
     background-color:#00e3e3;
 }
 
-#five-section .teams-right .square.bottom-left{
+main #fifth-section .teams-right .square.bottom-left{
     background-image: url(../img/clear_channel.svg);
     background-color:#0027cf;
 }
 
-#five-section .teams-left .square.bottom-right{
+main #fifth-section .teams-left .square.bottom-right{
     background-image: url(../img/university_of_florida.svg);
     background-color:#ff6c31;
 }
 
-#five-section .teams-right .square.bottom-right{
+main #fifth-section .teams-right .square.bottom-right{
     background-image: url(../img/lonely_planet.svg);    
     background-color:#f2db7e;
-
 }
 
-main #five-section .select-teams .square-left {
+main #fifth-section .select-teams .square-left {
     display: inline-block;
 }
 
-main #five-section .select-teams .square-right {
+main #fifth-section .select-teams .square-right {
     float: left;
 }
 
-main #five-section .central-text{
-    width: 703px;
-    height: 600px;
-    display: inline-block;
-    margin: 0 auto;
-    padding: 50px 50px 50px;
+main #fifth-section .central-text{
+    width: 39.1vw;
+    height: 30vw;
+    float: left;
+    padding: 50px;
 }
 
-main #five-section .central-text .designit{
+main #fifth-section .central-text .designit{
     height: 130px;
     width: 100%;
     background-image: url(../img/designit.svg);
@@ -404,24 +421,42 @@ main #five-section .central-text .designit{
     background-position-y: top;
 }
 
-main #five-section .central-text div:last-child, main #five-section .central-text p{
+main #fifth-section .central-text div:last-child,
+main #fifth-section .central-text p{
     display: inline-block;
     padding: 40px 0;
 }
 
-main #five-section .background-w-100 .w-70{
+main #fifth-section .background-w-100 .w-70{
     position: relative;
 }
 
-main #five-section .background-w-100 .w-70 h2{
+main #fifth-section .background-w-100 .w-70 h2{
     padding: 100px 0;
     font-size: 3em;
 }
 
-main #five-section .background-w-100 .w-70 div{
+main #fifth-section .background-w-100 .w-70 div{
     position: absolute;
     top: 100px;
     right: 120px;
 }
 
+main #sixth-section{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+main #sixth-section div div,
+main #sixth-section h2{
+    padding: 40px 0;
+    font-weight: bold;
+}
+
+main #sixth-section div i{
+    margin-left: 650px;
+    font-size: 1.5em;
+    display: inline;
+    vertical-align: middle;
+}
 
