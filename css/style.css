@@ -4,11 +4,25 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior:smooth;
+}
+
 body{
     font-family: 'Open Sans', sans-serif;
+    z-index: 1;
 }
 
 /* common */
+
+.banner{
+    text-decoration: none;
+    color: white;
+    background: blue;
+    padding: 10px;
+    text-align: center;
+    margin: 20px 0;
+}
 
 .banner1{
     text-decoration: none;
@@ -16,7 +30,8 @@ body{
     background: blue;
     padding: 10px;
     text-align: center;
- }
+    display: inline;
+}
 
 .banner2{
     text-decoration: none;
@@ -25,7 +40,7 @@ body{
     border: 1px solid black;
     display: inline;
     margin-left: 40px;
- }
+}
 
 .banner3{
     background-color: white;
@@ -34,7 +49,7 @@ body{
     padding: 10px 30px;
     text-align: center;
     display: inline;
- }
+}
 
 .w-90{
     width: 90%;
@@ -46,19 +61,17 @@ body{
     width: 70%;
     margin: 0 auto;
     max-width: 1386px;
-    
 }
 
 .clearfix::after {
     content: "";
     clear: both;
     display: table;
-  }
+}
 
 .background-w-100{
     background-color: #B4D0E7;
     width: 100%;
-    max-width: 1980px;
     margin: 0 auto;
 }
 
@@ -72,25 +85,57 @@ footer hr{
 
 /* fine common */
 
+header{
+    width: 100%;
+    height: 80px;
+    max-width: 1980px;
+    min-width: 1172px;
+    margin: 0 auto;
+}
+
 header nav{
     width: 100%;
     height: 80px;
     background-color: white;
     max-width: 1980px;
+    position: fixed;
+    z-index: 999;
+    margin: 0 auto;
+    text-align: center;
 }
 
 header nav div{
     line-height: 80px;
-    text-align: center;
+}
+
+header nav div ul{
+    display: inline;
+}
+
+header nav div ul li{
+    display: inline-block;
+    line-height: 76px;
+    border-bottom: 4px solid transparent;
+    overflow: hidden;
+}
+
+header nav div ul li a{
+    text-decoration: none;
+    padding: 0 20px;
+    color: black;
+}
+
+header nav div ul li:hover:not(header .nav-left ul li:first-child){
+    border-bottom: 4px solid blue;
 }
 
 header .nav-left{
-    width: 45%;
+    width: 40%;
     float: left;
 }
 
 header .nav-right{
-    width: 45%;
+    width: 40%;
     float: right;
 }
 
@@ -98,19 +143,17 @@ header .nav-left #logo img{
     vertical-align: middle;
     margin-bottom: 7px;
 }
-
-header nav div ul li{
-    display: inline-block;
-}
  
-header nav div ul li a{
-    text-decoration: none;
-    padding: 0 20px;
-    color: black;
- }
+header .nav-right .support-info{
+   position: absolute;
+   top: 80px;
+   width: 300px;
+   display: none;
+   background-color: white;
+}
 
-header nav .nav-right .banner{
-    margin-left: 10px;
+header nav .nav-right ul li:hover .support-info{
+    display: block;
 }
 
 main #first-section{
@@ -137,12 +180,13 @@ main #first-section .text-left p{
     padding-bottom: 50px;
 }
 
-main #first-section .text-left div{
-    padding: 25px 0 50px 0;
+main #first-section .text-left div:not(.banner1){
+    padding: 30px 0 50px 0;
 } 
 
-main #first-section .text-left i{
+main #first-section .text-left a i{
     font-size: 3em;
+    margin-top: 30px;
     margin-bottom: 145px;
 }
 
@@ -157,7 +201,8 @@ main #first-section .jumbotron img{
 }
 
 main #second-section{
-    margin-top: 250px;
+    padding-top: 100px;
+    margin-top: 150px;
 }
 
 main #second-section .type-billing h2{
@@ -186,7 +231,7 @@ main #second-section .col-button .type-abb{
     padding: 10px;  
 }
 
-main #second-section .col1-col2-col3 .abb {
+main #second-section .col1-col2-col3 .abb{
     padding: 10px 20px 20px 20px;
 }
 
@@ -259,17 +304,18 @@ main #third-section .box-text div:not(.banner2){
 main #fourth-section #size-second-title{
     font-size: 3em;
     margin-top: 130px;
+    margin-bottom: 40px;
 }
 
 main #fourth-section .content-box{
     float: left;
     width: calc(100% / 3 - 60px);
-    margin: 60px 0;
+    margin: 10px 0;
 }
 
 main #fourth-section .content-box:nth-child(3),
 main #fourth-section .content-box:nth-child(6){
-    margin: 60px;
+    margin: 10px 60px;
 }
   
 main #fourth-section .content-img img{
@@ -282,7 +328,7 @@ main #fourth-section .content-text h2{
 }
 
 main #fifth-section{
-    margin-top: 150px;
+    margin-top: 100px;
 }
 
 main #fifth-section .w-70 h2{
@@ -310,6 +356,7 @@ main #fifth-section .central-text{
     height: 30vw;
     float: left;
     padding: 50px;
+    overflow-y: auto;
 }
 
 main #fifth-section .central-text .designit{
@@ -382,11 +429,11 @@ main #fifth-section .teams-right .square.bottom-right{
     background-color:#f2db7e;
 }
 
-main #fifth-section .select-teams .square-left {
+main #fifth-section .select-teams .square-left{
     display: inline-block;
 }
 
-main #fifth-section .select-teams .square-right {
+main #fifth-section .select-teams .square-right{
     float: left;
 }
 
@@ -406,7 +453,7 @@ main #fifth-section .background-w-100 .w-70 div{
 }
 
 main #sixth-section{
-    margin-top: 50px;
+    margin-top: 40px;
     margin-bottom: 100px;
 }
 
@@ -416,10 +463,18 @@ main #sixth-section h2{
     font-weight: bold;
 }
 
-main #sixth-section div i{
+main #sixth-section div a{
     margin-left: 650px;
     font-size: 1.5em;
     vertical-align: middle;
+}
+
+main #sixth-section .answer-hidden{
+    display: none;
+}
+
+main #sixth-section .answer-arrow:hover .answer-hidden {
+    display: block;
 }
 
 footer{
@@ -431,35 +486,35 @@ footer .footer-top .col-footer{
     color: white;
     width: calc(100% / 5 - 60px);
     margin: 80px 60px 80px 0;
- }
+}
 
  footer .footer-top .col-footer ul li{
     list-style: none;
     padding: 5px 0;
- }
+}
+
+footer .footer-top .col-footer ul li:first-child{
+    padding: 15px 0;
+    font-size: 1.5em;
+    font-weight: bold;
+}
 
  footer .footer-top .col-footer ul li a{
     text-decoration: none;
     color: white;
- }
-
- footer .footer-top .col-footer ul li:first-child{
-    padding: 15px 0;
-    font-size: 1.5em;
-    font-weight: bold;
- }
+}
 
  footer .footer-bottom hr{
     margin: 50px 0;
     color: gray;
- }
+}
 
  footer .footer-bottom div{
     padding: 0 0 50px 0;
     color: gray;
- }
+}
 
  footer .footer-bottom div i{
     padding: 5px;
- }
+}
 
