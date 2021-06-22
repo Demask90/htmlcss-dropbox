@@ -73,7 +73,8 @@ body{
 }
 
 main #second-section hr,
-main #fifth-section hr{
+main #fifth-section hr,
+footer hr{
     width: 30%;
     margin: 10px 0;
 }
@@ -154,7 +155,6 @@ main #first-section .text-jumbo{
 main #first-section .text-left{
     width: 30%;
     display: inline-block;
-    margin-right: 150px;
     top: 0;
     left: 0;
 }
@@ -339,8 +339,31 @@ main #fifth-section .select-teams .teams-left{
     height: 30vw;
 }
 
+main #fifth-section .central-text{
+    width: 39.1vw;
+    height: 30vw;
+    float: left;
+    padding: 50px;
+}
+
+main #fifth-section .central-text .designit{
+    height: 6vw;
+    width: 100%;
+    background-image: url(../img/designit.svg);
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: top;
+}
+
+main #fifth-section .central-text div:last-child,
+main #fifth-section .central-text p{
+    display: inline-block;
+    padding: 40px 0;
+}
+
 main #fifth-section .select-teams .teams-right{
-    float: right;
+    float: left;
     width: 30vw;
     height: 30vw;
 }
@@ -404,29 +427,6 @@ main #fifth-section .select-teams .square-right {
     float: left;
 }
 
-main #fifth-section .central-text{
-    width: 39.1vw;
-    height: 30vw;
-    float: left;
-    padding: 50px;
-}
-
-main #fifth-section .central-text .designit{
-    height: 130px;
-    width: 100%;
-    background-image: url(../img/designit.svg);
-    background-size: 40%;
-    background-repeat: no-repeat;
-    background-position-x: left;
-    background-position-y: top;
-}
-
-main #fifth-section .central-text div:last-child,
-main #fifth-section .central-text p{
-    display: inline-block;
-    padding: 40px 0;
-}
-
 main #fifth-section .background-w-100 .w-70{
     position: relative;
 }
@@ -459,4 +459,45 @@ main #sixth-section div i{
     display: inline;
     vertical-align: middle;
 }
+
+footer{
+    background-color: black;
+}
+
+footer .footer-top .col-footer{
+    float: left;
+    color: white;
+    width: calc(100% / 5 - 80px);
+    margin: 80px 60px 80px 0;
+ }
+
+ footer .footer-top .col-footer ul li{
+    list-style: none;
+    padding: 5px 0;
+ }
+
+ footer .footer-top .col-footer ul li a{
+    text-decoration: none;
+    color: white;
+ }
+
+ footer .footer-top .col-footer ul li:first-child{
+    padding: 15px 0;
+    font-size: 1.5em;
+    font-weight: bold;
+ }
+
+ footer .footer-bottom hr{
+    margin: 50px 0;
+    color: gray;
+ }
+
+ footer .footer-bottom div{
+    padding: 0 0 50px 0;
+    color: gray;
+ }
+
+ footer .footer-bottom div i{
+    padding: 5px;
+ }
 
