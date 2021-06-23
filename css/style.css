@@ -1,3 +1,6 @@
+/* gli elementi color:blu/nero del testo sono nel codice html */
+/* nel codice css sono stati sottratti i padding dei banner in quanto inseriti nella parte common */
+
 * {
     margin: 0;
     padding: 0;
@@ -457,23 +460,50 @@ main #sixth-section{
     margin-bottom: 100px;
 }
 
-main #sixth-section div,
+main #sixth-section .question,
+main #sixth-section .question i,
 main #sixth-section h2{
-    padding: 40px 0;
     font-weight: bold;
+    vertical-align: middle;
+    height: 100px;
+	line-height: 100px;
+	padding-right: 20px;
 }
 
-main #sixth-section div a{
-    margin-left: 650px;
-    font-size: 1.5em;
+main #sixth-section .answer{
+    height: 50px;
+    line-height: 50px;
     vertical-align: middle;
 }
 
-main #sixth-section .answer-hidden{
+.float-l{
+    float: left;
+}
+
+.float-r{
+    float: right;
+}
+
+main #sixth-section #answer1,
+main #sixth-section #answer2,
+main #sixth-section #answer3,
+main #sixth-section #answer4,
+main #sixth-section .fa-angle-up,
+main #sixth-section #question1:active .fa-angle-down,
+main #sixth-section #question2:active .fa-angle-down,
+main #sixth-section #question3:active .fa-angle-down,
+main #sixth-section #question4:active .fa-angle-down {
     display: none;
 }
 
-main #sixth-section .answer-arrow:hover .answer-hidden {
+main #sixth-section #question1:active .fa-angle-up,
+main #sixth-section #question2:active .fa-angle-up,
+main #sixth-section #question3:active .fa-angle-up,
+main #sixth-section #question4:active .fa-angle-up,
+main #sixth-section #question1:active + #answer1,
+main #sixth-section #question2:active + #answer2,
+main #sixth-section #question3:active + #answer3,
+main #sixth-section #question4:active + #answer4{
     display: block;
 }
 
