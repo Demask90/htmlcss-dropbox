@@ -83,7 +83,7 @@ main #fifth-section hr,
 footer hr{
     width: 20%;
     margin: 10px 0;
-    color: grey;
+    color: lightgray;
 }
 
 /* fine common */
@@ -222,7 +222,7 @@ main #second-section .type-billing span{
 
 main #second-section .col{
     float: left;
-    border: 1px solid black;
+    border: 1px solid lightgray;
     width: calc(100% / 3 - 67px);
     margin-top: 20px;
 }
@@ -230,7 +230,7 @@ main #second-section .col{
 main #second-section .col .type-abb,
 main #second-section .col-button .type-abb{
     text-align: center;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid lightgray;
     padding: 10px;  
 }
 
@@ -258,7 +258,7 @@ main #second-section .col:nth-child(2){
 }
 
 main #second-section .col-button{
-    border: 1px solid black;
+    border: 1px solid lightgray;
     margin: 100px 0;
     position: relative;
 }
